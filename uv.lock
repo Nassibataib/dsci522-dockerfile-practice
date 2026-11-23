@@ -2,12 +2,6 @@ version = 1
 revision = 3
 requires-python = ">=3.14"
 
-[manifest]
-members = [
-    "documents",
-    "dsci522-dockerfile-practice",
-]
-
 [[package]]
 name = "cowsay"
 version = "6.1"
@@ -17,24 +11,9 @@ wheels = [
 ]
 
 [[package]]
-name = "documents"
-version = "0.1.0"
-source = { virtual = "." }
-dependencies = [
-    { name = "cowsay" },
-    { name = "numpy" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "cowsay", specifier = "==6.1" },
-    { name = "numpy", specifier = "==2.5.5" },
-]
-
-[[package]]
 name = "dsci522-dockerfile-practice"
 version = "0.1.0"
-source = { virtual = "dsci522-dockerfile-practice" }
+source = { virtual = "." }
 dependencies = [
     { name = "cowsay" },
     { name = "numpy" },
